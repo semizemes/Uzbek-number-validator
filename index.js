@@ -45,6 +45,3 @@ const checkNumber = (num) => {
 
     return;
 };
-
-
-console.log(typeof input.value)
