@@ -31,7 +31,7 @@ input.addEventListener('keydown', e => {
 
 
 const checkNumber = (num) => {
-    const regex = /^(+998)?\s?(\(\d{2}\)|\d{2})[- \s]?\d{3}[- \s]?\d{2}[- \s]?\d{2}$/;
+    const regex = /^(\+998)?\s?(\(\d{2}\)|\d{2})[- \s]?\d{3}[- \s]?\d{2}[- \s]?\d{2}$/;
     const test = regex.test(num);
 
 
