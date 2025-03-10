@@ -31,15 +31,15 @@ input.addEventListener('keydown', e => {
 
 
 const checkNumber = (num) => {
-    const regex = /^1?\s?(\(\d{3}\)|\d{3})[- \s]?\d{3}[- \s]?\d{4}$/;
+    const regex = /^+998?\s?(\(\d{2}\)|\d{2})[- \s]?\d{3}[- \s]?\d{2}[- \s]?\d{2}$/;
     const test = regex.test(num);
 
 
     if(test === true){
-        results.innerHTML += `Valid US number: <br> ${num} <br>`;
+        results.innerHTML += `Valid UZB number: <br> ${num} <br>`;
         results.classList.add("valid");
     } else {
-        results.innerHTML += `Invalid US number: <br> ${num} <br>`;
+        results.innerHTML += `Invalid UZB number: <br> ${num} <br>`;
         results.classList.add("invalid");
     }
 
